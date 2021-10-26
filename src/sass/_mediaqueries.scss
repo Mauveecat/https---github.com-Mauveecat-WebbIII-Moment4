@@ -1,0 +1,37 @@
+//Rubrik
+@media screen and(max-width: 600px) {
+    h1 {
+        font-size: 25pt;
+        text-align: center;
+    }
+}
+
+//Bilder
+@media screen and(max-width: 600px) {
+    .image {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+//huvudinnehåll
+@media screen and (max-width: 600px) {
+    #mainbox {
+        width: 85%;
+    }
+}
+
+//meny
+@media screen and (max-width: 600px) {
+    nav {
+        ul,
+        li {
+            display: block;
+            margin: 10pt;
+            width: 80%;
+            padding: 5pt;
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }
+}

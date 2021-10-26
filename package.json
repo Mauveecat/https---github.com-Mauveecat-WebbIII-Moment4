@@ -1,0 +1,30 @@
+{
+    "name": "moment_3",
+    "version": "1.0.0",
+    "description": "Moment 3",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Jenny",
+    "license": "ISC",
+    "devDependencies": {
+        "@babel/core": "^7.15.8",
+        "@babel/preset-env": "^7.15.8",
+        "babel-cli": "^6.26.0",
+        "babel-preset-env": "^1.7.0",
+        "gulp": "^4.0.2",
+        "gulp-babel": "^8.0.0",
+        "gulp-concat": "^2.6.1",
+        "gulp-imagemin": "^7.1.0",
+        "gulp-sass": "^5.0.0",
+        "gulp-sourcemaps": "^3.0.0",
+        "gulp-terser": "^2.1.0",
+        "node-sass": "^6.0.1",
+        "sass": "^1.42.1"
+    },
+    "dependencies": {
+        "browser-sync": "^2.27.5",
+        "imagemin": "^8.0.0"
+    }
+}

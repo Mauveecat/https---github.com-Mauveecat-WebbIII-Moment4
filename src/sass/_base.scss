@@ -1,0 +1,57 @@
+//Font
+$font-stack: 'Lucida Sans',
+'Lucida Sans Regular',
+'Lucida Grande',
+'Lucida Sans Unicode',
+Geneva,
+Verdana,
+sans-serif;
+//Färgschema
+//Bas
+$primary-base-color: rgb(2, 85, 85);
+$primary-light-color: rgb(122, 248, 242);
+$primary-dark-color: rgb(2, 48, 48);
+//Accentfärg
+$accent-base-color:orange;
+$accent-light-color: lightyellow;
+$accent-dark-color: darkorange;
+//Rubriker
+h1 {
+    font-size: 35pt;
+    color: lighten($accent-base-color, 10%);
+}
+
+h2 {
+    color: complement($primary-base-color);
+}
+
+h3 {
+    color: saturate($color: $accent-base-color, $amount: 70%);
+}
+
+//Mixins
+//Bilder
+@mixin image ($width) {
+    border: $width dotted #ddd;
+    &:hover {
+        border-color: $primary-base-color;
+        border: solid;
+    }
+}
+
+//Footer
+$footer: true;
+@mixin footer {
+    background-color: darken($accent-base-color, 40%);
+    color: $primary-light-color;
+    text-align: center;
+    border-radius: 10pt;
+    @if $footer==true {
+        border-color: white;
+        border-style: dotted;
+    }
+    else {
+        border-color: none;
+        border-style: none;
+    }
+}

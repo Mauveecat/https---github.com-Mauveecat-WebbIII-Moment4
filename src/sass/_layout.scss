@@ -1,0 +1,68 @@
+@import "base";
+//Body
+body {
+    font-family: $font-stack;
+    color: $primary-base-color;
+    line-height: 20pt;
+}
+
+//Header
+header {
+    background-color: $primary-dark-color;
+    text-align: left;
+    padding: 10pt;
+    border-radius: 10pt;
+}
+
+//Meny
+nav {
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+    .ul {
+        list-style-type: none;
+        display: inline;
+        text-align: center;
+        margin: 10pt;
+        padding: 10pt;
+    }
+    li {
+        @extend .ul;
+        background-color: $accent-base-color;
+    }
+    a {
+        text-decoration: none;
+        color: $primary-base-color;
+    }
+}
+
+//Main content
+$padding: true;
+#mainbox {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    //If-else
+    @if $padding==true {
+        padding: 5pt;
+    }
+    @else {
+        padding: none;
+    }
+}
+
+//Bilder
+.image {
+    border-radius: 20pt;
+    height: 80%;
+    width: 80%;
+}
+
+//Mixins för bild och footer
+.image {
+    @include image (5px);
+}
+
+footer {
+    @include footer();
+}
