@@ -28,6 +28,7 @@ function copyHTML() {
 //JS-task
 function copyJS() {
     return src(files.jsPath)
+        //Transpilera med Babel
         .pipe(babel())
         //komprimera flera filer till en
         .pipe(concat('main.js'))
